@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col mb-2" *ngFor="let animes of animes">
+        <div class="card p-2" style="width: 15rem; height: 33rem">
+          <img
+            class="card-img-top"
+            src="{{ animes.img }}"
+            alt="{{ animes.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ animes.name }}</h5>
+          </div>
+        </div>
+      </div>
+  </div>
+  <p>Promedio de ratign: {{ averagueRating }}</p>
+  <p>Total Episodios: {{ totalEpisodes }}</p>
+</div>
